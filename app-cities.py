@@ -6,8 +6,7 @@ plt.style.use('seaborn')
 
 
 st.title('World Cites')
-path = 'C:\\Users\\Administrator\\Python\\商业数据结构\\13\\my-streamlit\\worldcities.csv'
-df = pd.read_csv(path)
+df = pd.read_csv('worldcities.csv')
 
 # note that you have to use 0.0 and 40.0 given that the data type of population is float
 population_filter = st.slider('Minimal Population (Millions):', 0.0, 40.0, 3.6)  # min, max, default
